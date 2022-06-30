@@ -1,0 +1,51 @@
+package kr.hs.study.controller;
+
+import java.util.Scanner;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+public class TestController {
+	
+	
+	
+	@GetMapping("/sum")
+	
+	//데이터를 model에 넣을 것임 <-- request 영역에 저장된다
+	public ModelAndView sum(ModelAndView mv) {
+		
+		int result = 0;
+		for(int i=1; i<=10; i++) {
+			result += i;
+		}
+		
+		mv.setViewName("sum");
+		mv.addObject("result", result);		
+		return mv;
+	}
+
+	@GetMapping("/sum")
+	public String sum() {
+		int result = 0;
+		for(int i=1; i<=10; i++) {
+			result += i;
+		}
+		System.out.println("1부터 10까지의 합 : " + result);
+		return "result";
+	}
+	
+	@GetMapping("/multi_table")
+	public String multiTable() {
+		return "multi_table";
+	}
+	
+	@GetMapping("/multi")
+	public String multi(@RequestParam int number) {
+		for(int i=1; i<=9; i++) {
+			System.out.println(i + " * " + number + " = " + (i*number));
+		}
+		return "result";
+	
+	}
+}

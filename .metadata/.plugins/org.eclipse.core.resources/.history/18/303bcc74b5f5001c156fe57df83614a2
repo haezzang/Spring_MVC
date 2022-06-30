@@ -1,0 +1,5 @@
+package kr.hs.study.comtroller;
+
+public class HomeController {
+
+}

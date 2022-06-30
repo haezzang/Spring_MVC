@@ -1,0 +1,5 @@
+package kr.hs.study.dto;
+
+public class DataBean {
+
+}

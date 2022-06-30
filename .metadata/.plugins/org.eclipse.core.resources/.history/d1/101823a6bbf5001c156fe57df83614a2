@@ -1,0 +1,30 @@
+package kr.hs.study.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+public class TestController {
+
+	@GetMapping("/")
+
+	public String sum() {
+		int sum=0;
+		for(int i=1; i<=10; i++) {
+			sum+=i;
+		}
+		System.out.print(sum);
+
+		return "sum";
+
+	}
+	
+	
+	@GetMapping("/")
+
+	public String gugudan() {
+		System.out.println("/");
+		return "gugudan";
+
+	}
+	
+	
+}

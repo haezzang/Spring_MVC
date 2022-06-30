@@ -1,0 +1,36 @@
+package kr.hs.study.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class TestController {
+	
+	@GetMapping("/test1")
+	public String test1(@RequestParam int data1, @RequestParam int data2) {
+		
+		return "test1";
+		
+	}
+	
+	@GetMapping("/test2")
+	
+	public String test2(HttpServletRequest request) {
+		request.setAttribute("data3", 1);
+		request.setAttribute("data4", 2);
+		return "test2";
+	}
+	
+	
+	@GetMapping("/test3")
+	
+	public String test3(Model model) {
+		request.setAttribute("data3", 1);
+		request.setAttribute("data4", 2);
+		return "test3";
+	}
+
+}
