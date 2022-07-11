@@ -1,0 +1,13 @@
+@charset "EUC-KR";
+
+
+.link:hover{
+  color : red;
+  text-decoration: none;
+}
+
+
+.link{
+  color : red;
+  text-decoration: none;
+}

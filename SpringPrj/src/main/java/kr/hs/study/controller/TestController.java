@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import kr.hs.study.dto.DataBean;
+
 @Controller
 public class TestController {
 
@@ -38,4 +40,21 @@ public class TestController {
 		model.addAttribute("res", res);
 		return "multi";
 	}
+	
+	
+	@GetMapping("/score")
+	public String test4() {
+		return "score";
+	}
+	
+	
+	@PostMapping("/score_res")
+	public String test5(DataBean bean, Model model) {
+
+		 model.addAttribute("dto", bean);
+
+		return "score_res";
+	}
+	
+	
 }

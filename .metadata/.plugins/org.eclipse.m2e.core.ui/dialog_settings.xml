@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Spring_MVC\SpringPrj"/>
+			<item value="C:\Spring_MVC\commedObject"/>
 			<item value="C:\Spring_MVC\SpringPrj\src\main\java\kr\hs\study\controller\TestController.java"/>
 			<item value="C:\Spring_MVC\ViewResolver"/>
 			<item value="C:\Spring_MVC\getParameter\src\main\java\kr\hs\study\controller\HomeController.java"/>
@@ -55,6 +57,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="myBaties"/>
+			<item value="Score"/>
+			<item value="commedObject"/>
 			<item value="ViewResolver2"/>
 			<item value="View_resolver"/>
 			<item value="ViewResolver"/>
