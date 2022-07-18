@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form method="post" action="re_input">
+	<form method="post" action="result3">
 		data1:<input type="text" name="data1"><br /> 
 		data2:<input type="text" name="data2"><br />
-		<button type="submit">확인</button>
+		<button type="submit">수정</button>
 	</form>
 </body>
 </html>
