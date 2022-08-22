@@ -16,5 +16,9 @@
 <a href="score"  class="link">성적구하기</a>
 <a href="login"  class="link">로그인</a>
 <a href="upload"  class="link">파일업로드</a>
+<a href="register"  class="link">회원가입</a>
+<a href="member"  class="link">리스트</a>
+<a href="update"  class="link">회원수정</a>
+
 </body>
 </html>
