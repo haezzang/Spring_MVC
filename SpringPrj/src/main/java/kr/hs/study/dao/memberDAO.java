@@ -9,5 +9,7 @@ public interface memberDAO {
 
 	public List<memberDTO> select();
 	public void update(memberDTO dto);
+	public memberDTO read(String userid);
+	public memberDTO delete(String userid);
 
 }

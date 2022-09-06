@@ -30,4 +30,12 @@ public class memberImpl implements memberInterface {
 		dao.update(dto);
 	}
 
+	public memberDTO read(String userid) {
+		return dao.read(userid);
+	}
+	
+	public memberDTO delete(String userid) {
+		return dao.delete(userid);
+	}
+
 }

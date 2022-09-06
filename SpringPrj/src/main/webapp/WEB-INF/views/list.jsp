@@ -21,6 +21,7 @@
 <td>이름</td>
 <td>이메일</td>
 <td>수정</td>
+<td>삭제</td>
 </tr>
 
 <c:forEach var="value" items="${list}">
@@ -29,7 +30,8 @@
 <td>${value.upw} </td>
 <td>${value.uname}</td>
 <td>${value.uemail}</td>
-<td> <a href="update/${value.userid}">수정</td>
+<td> <a href="update?userid=${value.userid}">수정</td>
+<td> <a href="delete?userid=${value.userid}">삭제</td>
 </c:forEach>
 </tr>
 

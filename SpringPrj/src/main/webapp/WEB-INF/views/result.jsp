@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>성공띠</h1>
-
+<h1>성공</h1>
+ <a href="result">돌아가기</a>
 </body>
 </html>

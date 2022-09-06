@@ -26,11 +26,21 @@ public class memberDAOImpl implements memberDAO {
 	}
 	
 	public void update(memberDTO dto) {
-		sqlsession.insert("member.update_data",dto);
+		sqlsession.update("member.update_data",dto);
+	}
+	public memberDTO read(String userid){
+		
+		return sqlsession.selectOne("member.read_data",userid);
+		
 	}
 	
+	public memberDTO delete(String userid){
+		
+		return sqlsession.selectOne("member.delete_data",userid);
+		
+	}
 	
-	
+
 	
 
 }
