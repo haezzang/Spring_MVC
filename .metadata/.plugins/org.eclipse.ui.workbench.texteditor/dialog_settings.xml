@@ -6,7 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="mapper"/>
 		<list key="findhistory">
+			<item value="mapper"/>
 			<item value="package kr.hs.study.controller;"/>
 		</list>
 		<list key="replacehistory">

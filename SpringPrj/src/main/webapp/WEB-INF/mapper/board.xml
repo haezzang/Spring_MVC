@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <mapper namespace="board">
+  	<insert id="insert_data" parameterType="kr.hs.study.dto.boardDTO">
+ 	insert into board(title,writer,password,content,email) values(#{title},#{writer},#{password},#{content},#{email})
+ 	</insert>
+ 	
+
+<!--   	<select id="select_data" resultType="kr.hs.study.dto.memberDTO" >
+ 	select * from tbl_member
+ 	</select>
+ 	
+ 	  	<select id="read_data" resultType="kr.hs.study.dto.memberDTO" >
+ 		select * from tbl_member where userid=#{userid}
+ 	</select>
+ 	
+ 	<update id="update_data" parameterType="kr.hs.study.dto.memberDTO" >
+ 	update tbl_member set uname=#{uname}, uemail=#{uemail} where userid=#{userid}
+ 	</update>
+ 	
+ 	 	<delete id="delete_data" parameterType="kr.hs.study.dto.memberDTO" >
+ 		delete from tbl_member where userid=#{userid}
+ 	</delete> -->
+
+</mapper>       

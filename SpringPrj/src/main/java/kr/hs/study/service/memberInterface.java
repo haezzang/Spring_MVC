@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import kr.hs.study.dto.boardDTO;
 import kr.hs.study.dto.memberDTO;
 
 
