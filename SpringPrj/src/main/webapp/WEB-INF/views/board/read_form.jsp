@@ -1,7 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
-    
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,10 +9,11 @@
 </head>
 <body>
 
-<a href="write">글쓰기</a>
-<a href="select">글목록</a>
 
 
+<h1>${list.title}</h1>
+<h2>${list.content}</h2>
 
+</form>
 </body>
 </html>

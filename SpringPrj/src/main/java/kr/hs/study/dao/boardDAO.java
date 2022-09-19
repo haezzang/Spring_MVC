@@ -7,10 +7,9 @@ import kr.hs.study.dto.boardDTO;
 
 public interface boardDAO {
 	public void insert(boardDTO dto);
-
-//	public List<memberDTO> select();
-//	public void update(memberDTO dto);
-//	public memberDTO read(String userid);
-//	public memberDTO delete(String userid);
+	public List<boardDTO> select();
+	public void update(boardDTO dto);
+	public boardDTO read(int idx);
+	public boardDTO delete(int idx);
 
 }

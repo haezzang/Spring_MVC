@@ -5,24 +5,28 @@
  
  <mapper namespace="board">
   	<insert id="insert_data" parameterType="kr.hs.study.dto.boardDTO">
- 	insert into board(title,writer,password,content,email) values(#{title},#{writer},#{password},#{content},#{email})
+ 	insert into board(idx,title,writer,password,content,email,hit) values((select nvl(max(idx)+1,1) from board),#{title},#{writer},#{password},#{content},#{email},1)
  	</insert>
  	
 
-<!--   	<select id="select_data" resultType="kr.hs.study.dto.memberDTO" >
- 	select * from tbl_member
+  	<select id="select_data" resultType="kr.hs.study.dto.boardDTO" >
+ 	select * from board
+ 	</select>
+	
+ 	  	<select id="read_data" resultType="kr.hs.study.dto.boardDTO" >
+ 		select * from board where idx=#{idx}
  	</select>
  	
- 	  	<select id="read_data" resultType="kr.hs.study.dto.memberDTO" >
- 		select * from tbl_member where userid=#{userid}
- 	</select>
- 	
- 	<update id="update_data" parameterType="kr.hs.study.dto.memberDTO" >
- 	update tbl_member set uname=#{uname}, uemail=#{uemail} where userid=#{userid}
+ 	<update id="update_data" parameterType="kr.hs.study.dto.boardDTO" >
+ 	update board set title=#{title},writer=#{writer},password=#{password},content=#{content},email=#{email}  where idx=#{idx}
  	</update>
  	
- 	 	<delete id="delete_data" parameterType="kr.hs.study.dto.memberDTO" >
- 		delete from tbl_member where userid=#{userid}
- 	</delete> -->
+ 	
+
+ 	
+
+ 	 	<delete id="delete_data" parameterType="kr.hs.study.dto.boardDTO" >
+ 		delete from board where idx=#{idx}
+ 	</delete> 
 
 </mapper>       

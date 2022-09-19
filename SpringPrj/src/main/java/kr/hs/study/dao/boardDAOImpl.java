@@ -22,6 +22,25 @@ public class boardDAOImpl implements boardDAO {
 		sqlsession.insert("board.insert_data",dto);
 
 	}
+	
+	public List<boardDTO> select(){
+		return sqlsession.selectList("board.select_data");
+	}
+	
+	public void update(boardDTO dto) {
+		sqlsession.update("board.update_data",dto);
+	}
+	public boardDTO read(int idx){
+		
+		return sqlsession.selectOne("board.read_data",idx);
+		
+	}
+	
+	public boardDTO delete(int idx){
+		
+		return sqlsession.selectOne("board.delete_data",idx);
+		
+	}
 
 	
 	

@@ -23,21 +23,24 @@ public class boardrImpl implements boardInterface {
 		dao.insert(dto);
 
 	}
-//	
-//	public List<memberDTO> select(){
-//		return dao.select();
-//	}
-//	
-//	public void update(memberDTO dto) {
-//		dao.update(dto);
-//	}
-//
-//	public memberDTO read(String userid) {
-//		return dao.read(userid);
-//	}
-//	
-//	public memberDTO delete(String userid) {
-//		return dao.delete(userid);
-//	}
+	
+	
+	public List<boardDTO> select(){
+	return dao.select();
+	}
+
+
+	
+	public void update(boardDTO dto) {
+		dao.update(dto);
+	}
+
+	public boardDTO read(int idx) {
+		return dao.read(idx);
+	}
+	
+	public boardDTO delete(int idx) {
+		return dao.delete(idx);
+	}
 
 }
