@@ -20,6 +20,7 @@
 <a href="member"  class="link">리스트</a><br>
 <a href="update"  class="link">회원수정</a><br>
 <a href="board"  class="link">게시판</a><br>
+<a href="shop"  class="link"> 쇼핑몰</a><br>
 
 </body>
 </html>
