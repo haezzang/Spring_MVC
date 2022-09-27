@@ -31,15 +31,15 @@ public class productDAOImpl implements productDAO {
 	public void update(productDTO dto) {
 		sqlsession.update("product.update_data",dto);
 	}
-	public productDTO read(int product_id){
+	public productDTO read(int productId){
 		
-		return sqlsession.selectOne("product.read_data",product_id);
+		return sqlsession.selectOne("product.read_data",productId);
 		
 	}
 	
-	public productDTO delete(int product_id){
+	public productDTO delete(int productId){
 		
-		return sqlsession.selectOne("product.delete_data",product_id);
+		return sqlsession.selectOne("product.delete_data",productId);
 		
 	}
 

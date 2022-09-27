@@ -29,12 +29,12 @@ public class productImpl implements productInterface{
 		dao.update(dto);
 	}
 
-	public productDTO read(int product_id) {
-		return dao.read(product_id);
+	public productDTO read(int productId) {
+		return dao.read(productId);
 	}
 	
-	public productDTO delete(int product_id) {
-		return dao.delete(product_id);
+	public productDTO delete(int productId) {
+		return dao.delete(productId);
 	}
 
 

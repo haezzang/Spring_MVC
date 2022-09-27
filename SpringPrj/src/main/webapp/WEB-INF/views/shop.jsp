@@ -9,7 +9,7 @@
 <body>
 
 
-<a href=insert_form  class="link">상품등록</a><br>
+<a href=insert_product  class="link">상품등록</a><br>
 
 </body>
 </html>

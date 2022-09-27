@@ -4,60 +4,49 @@ import org.springframework.web.multipart.MultipartFile;
 
 public class productDTO {
 
-	private int product_id;
-	private String product_name;
-	private int proudct_price;
-	private String proudct_desc;
-	private MultipartFile product_img;
-	private String url;
-
-	public int getProduct_id() {
-		return product_id;
+	private int productId;
+	private String productName;
+	private int productPrice;
+	private String productDesc;
+	private String productUrl;
+	private MultipartFile productImage;
+	public int getProductId() {
+		return productId;
+	}
+	public void setProductId(int productId) {
+		this.productId = productId;
+	}
+	public String getProductName() {
+		return productName;
+	}
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+	public String getProductDesc() {
+		return productDesc;
+	}
+	public void setProductDesc(String productDesc) {
+		this.productDesc = productDesc;
+	}
+	public int getProductPrice() {
+		return productPrice;
+	}
+	public void setProductPrice(int productPrice) {
+		this.productPrice = productPrice;
+	}
+	public String getProductUrl() {
+		return productUrl;
+	}
+	public void setProductUrl(String productUrl) {
+		this.productUrl = productUrl;
+	}
+	public MultipartFile getProductImage() {
+		return productImage;
+	}
+	public void setProductImage(MultipartFile productImage) {
+		this.productImage = productImage;
 	}
 
-	public void setProduct_id(int product_id) {
-		this.product_id = product_id;
-	}
-
-	public String getProduct_name() {
-		return product_name;
-	}
-
-	public void setProduct_name(String product_name) {
-		this.product_name = product_name;
-	}
-
-	public int getProudct_price() {
-		return proudct_price;
-	}
-
-	public void setProudct_price(int proudct_price) {
-		this.proudct_price = proudct_price;
-	}
-
-	public String getProudct_desc() {
-		return proudct_desc;
-	}
-
-	public void setProudct_desc(String proudct_desc) {
-		this.proudct_desc = proudct_desc;
-	}
-
-	public MultipartFile getProduct_img() {
-		return product_img;
-	}
-
-	public void setProduct_img(MultipartFile product_img) {
-		this.product_img = product_img;
-	}
-
-	public String getUrl() {
-		return url;
-	}
-
-	public void setUrl(String url) {
-		this.url = url;
-	}
 
 
 }

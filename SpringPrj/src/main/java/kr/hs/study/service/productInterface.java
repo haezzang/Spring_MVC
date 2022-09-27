@@ -9,8 +9,8 @@ public interface productInterface {
 	public void insert(productDTO dto);
 	public List<productDTO> select();
 	public void update(productDTO dto);
-	public productDTO read(int product_id);
-	public productDTO delete(int product_id);
+	public productDTO read(int productId);
+	public productDTO delete(int productId);
 }
 
 
