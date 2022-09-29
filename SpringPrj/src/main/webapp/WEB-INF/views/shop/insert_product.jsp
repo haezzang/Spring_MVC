@@ -62,7 +62,7 @@ $(function(){
          <tr>
             <td colspan="2" align="center">
             <input type="button" value="상품 등록" id="addBtn"> 
-            <input type="button" value="상품 등록" id="listBtn">
+            <input type="button" value="상품 목록" id="listBtn">
             </td>
          </tr>
       </table>

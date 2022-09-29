@@ -10,6 +10,6 @@
 
 
 <a href=insert_product  class="link">상품등록</a><br>
-
+<a href=list  class="link">상품목록</a><br>
 </body>
 </html>
